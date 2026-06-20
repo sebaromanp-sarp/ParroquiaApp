@@ -1,0 +1,2078 @@
+[
+{
+"nombre": "Algarrobo",
+"region": "Valparaíso",
+"provincia": "San Antonio",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Alhué",
+"region": "Metropolitana de Santiago",
+"provincia": "Melipilla",
+"diocesis": "Diócesis de Melipilla"
+},
+{
+"nombre": "Alto Biobío",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Alto Hospicio",
+"region": "Tarapacá",
+"provincia": "Iquique",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Alto del Carmen",
+"region": "Atacama",
+"provincia": "Huasco",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Ancud",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Andacollo",
+"region": "Coquimbo",
+"provincia": "Elqui",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Angol",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Antofagasta",
+"region": "Antofagasta",
+"provincia": "Antofagasta",
+"diocesis": "Arquidiócesis de Antofagasta"
+},
+{
+"nombre": "Antuco",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Antártica",
+"region": "Magallanes",
+"provincia": "Antártica Chilena",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Arauco",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Arica",
+"region": "Arica y Parinacota",
+"provincia": "Arica",
+"diocesis": "Diócesis de San Marcos de Arica"
+},
+{
+"nombre": "Aysén",
+"region": "Aysén",
+"provincia": "Aysén",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Buin",
+"region": "Metropolitana de Santiago",
+"provincia": "Maipo",
+"diocesis": "Diócesis de San Bernardo"
+},
+{
+"nombre": "Bulnes",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Cabildo",
+"region": "Valparaíso",
+"provincia": "Petorca",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Cabo de Hornos",
+"region": "Magallanes",
+"provincia": "Antártica Chilena",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Cabrero",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Calama",
+"region": "Antofagasta",
+"provincia": "El Loa",
+"diocesis": "Diócesis de Calama"
+},
+{
+"nombre": "Calbuco",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Caldera",
+"region": "Atacama",
+"provincia": "Copiapó",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Calera de Tango",
+"region": "Metropolitana de Santiago",
+"provincia": "Maipo",
+"diocesis": "Diócesis de San Bernardo"
+},
+{
+"nombre": "Calle Larga",
+"region": "Valparaíso",
+"provincia": "Los Andes",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Camarones",
+"region": "Arica y Parinacota",
+"provincia": "Arica",
+"diocesis": "Diócesis de San Marcos de Arica"
+},
+{
+"nombre": "Camiña",
+"region": "Tarapacá",
+"provincia": "Tamarugal",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Canela",
+"region": "Coquimbo",
+"provincia": "Choapa",
+"diocesis": "Prelatura de Illapel"
+},
+{
+"nombre": "Carahue",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Cartagena",
+"region": "Valparaíso",
+"provincia": "San Antonio",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Casablanca",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Castro",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Catemu",
+"region": "Valparaíso",
+"provincia": "San Felipe de Aconcagua",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Cauquenes",
+"region": "Maule",
+"provincia": "Cauquenes",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Cañete",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Cerrillos",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Cerro Navia",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Chaitén",
+"region": "Los Lagos",
+"provincia": "Palena",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Chanco",
+"region": "Maule",
+"provincia": "Cauquenes",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Chañaral",
+"region": "Atacama",
+"provincia": "Chañaral",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Chiguayante",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Chile Chico",
+"region": "Aysén",
+"provincia": "General Carrera",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Chillán",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Chillán Viejo",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Chimbarongo",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Cholchol",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Chonchi",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Chépica",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Cisnes",
+"region": "Aysén",
+"provincia": "Aysén",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Cobquecura",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Cochamó",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Cochrane",
+"region": "Aysén",
+"provincia": "Capitán Prat",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Codegua",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Coelemu",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Coihaique",
+"region": "Aysén",
+"provincia": "Coihaique",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Coihueco",
+"region": "Ñuble",
+"provincia": "Punilla",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Coinco",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Colbún",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Colchane",
+"region": "Tarapacá",
+"provincia": "Tamarugal",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Colina",
+"region": "Metropolitana de Santiago",
+"provincia": "Chacabuco",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Collipulli",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Coltauco",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Combarbalá",
+"region": "Coquimbo",
+"provincia": "Limarí",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Concepción",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Conchalí",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Concón",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Constitución",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Contulmo",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Copiapó",
+"region": "Atacama",
+"provincia": "Copiapó",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Coquimbo",
+"region": "Coquimbo",
+"provincia": "Elqui",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Coronel",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Corral",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Cunco",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Curacautín",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Curacaví",
+"region": "Metropolitana de Santiago",
+"provincia": "Melipilla",
+"diocesis": "Diócesis de Melipilla"
+},
+{
+"nombre": "Curaco de Vélez",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Curanilahue",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Curarrehue",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Curepto",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Curicó",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Dalcahue",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Diego de Almagro",
+"region": "Atacama",
+"provincia": "Chañaral",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Doñihue",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "El Bosque",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "El Carmen",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "El Monte",
+"region": "Metropolitana de Santiago",
+"provincia": "Talagante",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "El Quisco",
+"region": "Valparaíso",
+"provincia": "San Antonio",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "El Tabo",
+"region": "Valparaíso",
+"provincia": "San Antonio",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Empedrado",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Ercilla",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Estación Central",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Florida",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Freire",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Freirina",
+"region": "Atacama",
+"provincia": "Huasco",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Fresia",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Frutillar",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Futaleufú",
+"region": "Los Lagos",
+"provincia": "Palena",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Futrono",
+"region": "Los Ríos",
+"provincia": "Ranco",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Galvarino",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "General Lagos",
+"region": "Arica y Parinacota",
+"provincia": "Parinacota",
+"diocesis": "Diócesis de San Marcos de Arica"
+},
+{
+"nombre": "Gorbea",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Graneros",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Guaitecas",
+"region": "Aysén",
+"provincia": "Aysén",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Hijuelas",
+"region": "Valparaíso",
+"provincia": "Quillota",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Hualaihué",
+"region": "Los Lagos",
+"provincia": "Palena",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Hualañé",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Hualpén",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Hualqui",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Huara",
+"region": "Tarapacá",
+"provincia": "Tamarugal",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Huasco",
+"region": "Atacama",
+"provincia": "Huasco",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Huechuraba",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Illapel",
+"region": "Coquimbo",
+"provincia": "Choapa",
+"diocesis": "Prelatura de Illapel"
+},
+{
+"nombre": "Independencia",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Iquique",
+"region": "Tarapacá",
+"provincia": "Iquique",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Isla de Maipo",
+"region": "Metropolitana de Santiago",
+"provincia": "Talagante",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Isla de Pascua",
+"region": "Valparaíso",
+"provincia": "Isla de Pascua",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Juan Fernández",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "La Calera",
+"region": "Valparaíso",
+"provincia": "Quillota",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "La Cisterna",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "La Cruz",
+"region": "Valparaíso",
+"provincia": "Quillota",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "La Estrella",
+"region": "O'Higgins",
+"provincia": "Cardenal Caro",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "La Florida",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "La Granja",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "La Higuera",
+"region": "Coquimbo",
+"provincia": "Elqui",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "La Ligua",
+"region": "Valparaíso",
+"provincia": "Petorca",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "La Pintana",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "La Reina",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "La Serena",
+"region": "Coquimbo",
+"provincia": "Elqui",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "La Unión",
+"region": "Los Ríos",
+"provincia": "Ranco",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Lago Ranco",
+"region": "Los Ríos",
+"provincia": "Ranco",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Lago Verde",
+"region": "Aysén",
+"provincia": "Coihaique",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Laguna Blanca",
+"region": "Magallanes",
+"provincia": "Magallanes",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Laja",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Lampa",
+"region": "Metropolitana de Santiago",
+"provincia": "Chacabuco",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Lanco",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Las Cabras",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Las Condes",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Lautaro",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Lebu",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Licantén",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Limache",
+"region": "Valparaíso",
+"provincia": "Marga Marga",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Linares",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Litueche",
+"region": "O'Higgins",
+"provincia": "Cardenal Caro",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Llanquihue",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Llay-Llay",
+"region": "Valparaíso",
+"provincia": "San Felipe de Aconcagua",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Lo Barnechea",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Lo Espejo",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Lo Prado",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Lolol",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Loncoche",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Longaví",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Lonquimay",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Los Andes",
+"region": "Valparaíso",
+"provincia": "Los Andes",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Los Lagos",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Los Muermos",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Los Sauces",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Los Vilos",
+"region": "Coquimbo",
+"provincia": "Choapa",
+"diocesis": "Prelatura de Illapel"
+},
+{
+"nombre": "Los Álamos",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Los Ángeles",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Lota",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Lumaco",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Machalí",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Macul",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Maipú",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Malloa",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Marchihue",
+"region": "O'Higgins",
+"provincia": "Cardenal Caro",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Mariquina",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "María Elena",
+"region": "Antofagasta",
+"provincia": "Tocopilla",
+"diocesis": "Arquidiócesis de Antofagasta"
+},
+{
+"nombre": "María Pinto",
+"region": "Metropolitana de Santiago",
+"provincia": "Melipilla",
+"diocesis": "Diócesis de Melipilla"
+},
+{
+"nombre": "Maule",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Maullín",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Mejillones",
+"region": "Antofagasta",
+"provincia": "Antofagasta",
+"diocesis": "Arquidiócesis de Antofagasta"
+},
+{
+"nombre": "Melipeuco",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Melipilla",
+"region": "Metropolitana de Santiago",
+"provincia": "Melipilla",
+"diocesis": "Diócesis de Melipilla"
+},
+{
+"nombre": "Molina",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Monte Patria",
+"region": "Coquimbo",
+"provincia": "Limarí",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Mostazal",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Mulchén",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Máfil",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Nacimiento",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Nancagua",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Natales",
+"region": "Magallanes",
+"provincia": "Última Esperanza",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Navidad",
+"region": "O'Higgins",
+"provincia": "Cardenal Caro",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Negrete",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Ninhue",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Nogales",
+"region": "Valparaíso",
+"provincia": "Quillota",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Nueva Imperial",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "O'Higgins",
+"region": "Aysén",
+"provincia": "Capitán Prat",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Olivar",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Ollagüe",
+"region": "Antofagasta",
+"provincia": "El Loa",
+"diocesis": "Diócesis de Calama"
+},
+{
+"nombre": "Olmué",
+"region": "Valparaíso",
+"provincia": "Marga Marga",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Osorno",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "Ovalle",
+"region": "Coquimbo",
+"provincia": "Limarí",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Padre Hurtado",
+"region": "Metropolitana de Santiago",
+"provincia": "Talagante",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Padre Las Casas",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Paihuano",
+"region": "Coquimbo",
+"provincia": "Elqui",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Paillaco",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Paine",
+"region": "Metropolitana de Santiago",
+"provincia": "Maipo",
+"diocesis": "Diócesis de San Bernardo"
+},
+{
+"nombre": "Palena",
+"region": "Los Lagos",
+"provincia": "Palena",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Palmilla",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Panguipulli",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Panquehue",
+"region": "Valparaíso",
+"provincia": "San Felipe de Aconcagua",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Papudo",
+"region": "Valparaíso",
+"provincia": "Petorca",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Paredones",
+"region": "O'Higgins",
+"provincia": "Cardenal Caro",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Parral",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Pedro Aguirre Cerda",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Pelarco",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Pelluhue",
+"region": "Maule",
+"provincia": "Cauquenes",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Pemuco",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Pencahue",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Penco",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Peralillo",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Perquenco",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Petorca",
+"region": "Valparaíso",
+"provincia": "Petorca",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Peumo",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Peñaflor",
+"region": "Metropolitana de Santiago",
+"provincia": "Talagante",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Peñalolén",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Pica",
+"region": "Tarapacá",
+"provincia": "Tamarugal",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Pichidegua",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Pichilemu",
+"region": "O'Higgins",
+"provincia": "Cardenal Caro",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Pinto",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Pirque",
+"region": "Metropolitana de Santiago",
+"provincia": "Cordillera",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Pitrufquén",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Placilla",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Portezuelo",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Porvenir",
+"region": "Magallanes",
+"provincia": "Tierra del Fuego",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Pozo Almonte",
+"region": "Tarapacá",
+"provincia": "Tamarugal",
+"diocesis": "Diócesis de Iquique"
+},
+{
+"nombre": "Primavera",
+"region": "Magallanes",
+"provincia": "Tierra del Fuego",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Providencia",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Puchuncaví",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Pucón",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Pudahuel",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Puente Alto",
+"region": "Metropolitana de Santiago",
+"provincia": "Cordillera",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Puerto Montt",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Puerto Octay",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "Puerto Varas",
+"region": "Los Lagos",
+"provincia": "Llanquihue",
+"diocesis": "Arquidiócesis de Puerto Montt"
+},
+{
+"nombre": "Pumanque",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Punitaqui",
+"region": "Coquimbo",
+"provincia": "Limarí",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Punta Arenas",
+"region": "Magallanes",
+"provincia": "Magallanes",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Puqueldón",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Purranque",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "Purén",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Putaendo",
+"region": "Valparaíso",
+"provincia": "San Felipe de Aconcagua",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Putre",
+"region": "Arica y Parinacota",
+"provincia": "Parinacota",
+"diocesis": "Diócesis de San Marcos de Arica"
+},
+{
+"nombre": "Puyehue",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "Queilén",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Quellón",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Quemchi",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Quilaco",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Quilicura",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Quilleco",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Quillota",
+"region": "Valparaíso",
+"provincia": "Quillota",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Quillón",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Quilpué",
+"region": "Valparaíso",
+"provincia": "Marga Marga",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Quinchao",
+"region": "Los Lagos",
+"provincia": "Chiloé",
+"diocesis": "Diócesis de Ancud"
+},
+{
+"nombre": "Quinta Normal",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Quinta de Tilcoco",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Quintero",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Quirihue",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Rancagua",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Rauco",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Recoleta",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Renaico",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Renca",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Rengo",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Requínoa",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Retiro",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Rinconada",
+"region": "Valparaíso",
+"provincia": "Los Andes",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Romeral",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Ránquil",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Río Bueno",
+"region": "Los Ríos",
+"provincia": "Ranco",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Río Claro",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Río Hurtado",
+"region": "Coquimbo",
+"provincia": "Limarí",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Río Ibáñez",
+"region": "Aysén",
+"provincia": "General Carrera",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Río Negro",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "Río Verde",
+"region": "Magallanes",
+"provincia": "Magallanes",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Saavedra",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Sagrada Familia",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Salamanca",
+"region": "Coquimbo",
+"provincia": "Choapa",
+"diocesis": "Prelatura de Illapel"
+},
+{
+"nombre": "San Antonio",
+"region": "Valparaíso",
+"provincia": "San Antonio",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "San Bernardo",
+"region": "Metropolitana de Santiago",
+"provincia": "Maipo",
+"diocesis": "Diócesis de San Bernardo"
+},
+{
+"nombre": "San Carlos",
+"region": "Ñuble",
+"provincia": "Punilla",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "San Clemente",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "San Esteban",
+"region": "Valparaíso",
+"provincia": "Los Andes",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "San Fabián",
+"region": "Ñuble",
+"provincia": "Punilla",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "San Felipe",
+"region": "Valparaíso",
+"provincia": "San Felipe de Aconcagua",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "San Fernando",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "San Gregorio",
+"region": "Magallanes",
+"provincia": "Magallanes",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "San Ignacio",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "San Javier",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "San Joaquín",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "San José de Maipo",
+"region": "Metropolitana de Santiago",
+"provincia": "Cordillera",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "San Juan de la Costa",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "San Miguel",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "San Nicolás",
+"region": "Ñuble",
+"provincia": "Punilla",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "San Pablo",
+"region": "Los Lagos",
+"provincia": "Osorno",
+"diocesis": "Diócesis de Osorno"
+},
+{
+"nombre": "San Pedro",
+"region": "Metropolitana de Santiago",
+"provincia": "Melipilla",
+"diocesis": "Diócesis de Melipilla"
+},
+{
+"nombre": "San Pedro de Atacama",
+"region": "Antofagasta",
+"provincia": "El Loa",
+"diocesis": "Diócesis de Calama"
+},
+{
+"nombre": "San Pedro de La Paz",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "San Rafael",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "San Ramón",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "San Rosendo",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "San Vicente",
+"region": "O'Higgins",
+"provincia": "Cachapoal",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Santa Bárbara",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Santa Cruz",
+"region": "O'Higgins",
+"provincia": "Colchagua",
+"diocesis": "Diócesis de Rancagua"
+},
+{
+"nombre": "Santa Juana",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Santa María",
+"region": "Valparaíso",
+"provincia": "San Felipe de Aconcagua",
+"diocesis": "Diócesis de San Felipe"
+},
+{
+"nombre": "Santiago",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Santo Domingo",
+"region": "Valparaíso",
+"provincia": "San Antonio",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Sierra Gorda",
+"region": "Antofagasta",
+"provincia": "Antofagasta",
+"diocesis": "Arquidiócesis de Antofagasta"
+},
+{
+"nombre": "Talagante",
+"region": "Metropolitana de Santiago",
+"provincia": "Talagante",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Talca",
+"region": "Maule",
+"provincia": "Talca",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Talcahuano",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Taltal",
+"region": "Antofagasta",
+"provincia": "Antofagasta",
+"diocesis": "Arquidiócesis de Antofagasta"
+},
+{
+"nombre": "Temuco",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Teno",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Teodoro Schmidt",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Tierra Amarilla",
+"region": "Atacama",
+"provincia": "Copiapó",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Tiltil",
+"region": "Metropolitana de Santiago",
+"provincia": "Chacabuco",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Timaukel",
+"region": "Magallanes",
+"provincia": "Tierra del Fuego",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Tirúa",
+"region": "Biobío",
+"provincia": "Arauco",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Tocopilla",
+"region": "Antofagasta",
+"provincia": "Tocopilla",
+"diocesis": "Arquidiócesis de Antofagasta"
+},
+{
+"nombre": "Toltén",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Tomé",
+"region": "Biobío",
+"provincia": "Concepción",
+"diocesis": "Arquidiócesis de Concepción"
+},
+{
+"nombre": "Torres del Paine",
+"region": "Magallanes",
+"provincia": "Última Esperanza",
+"diocesis": "Diócesis de Punta Arenas"
+},
+{
+"nombre": "Tortel",
+"region": "Aysén",
+"provincia": "Capitán Prat",
+"diocesis": "Vicariato Apostólico de Aysén"
+},
+{
+"nombre": "Traiguén",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Trehuaco",
+"region": "Ñuble",
+"provincia": "Itata",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Tucapel",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Valdivia",
+"region": "Los Ríos",
+"provincia": "Valdivia",
+"diocesis": "Diócesis de Valdivia"
+},
+{
+"nombre": "Vallenar",
+"region": "Atacama",
+"provincia": "Huasco",
+"diocesis": "Diócesis de Copiapó"
+},
+{
+"nombre": "Valparaíso",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Vichuquén",
+"region": "Maule",
+"provincia": "Curicó",
+"diocesis": "Diócesis de Talca"
+},
+{
+"nombre": "Victoria",
+"region": "La Araucanía",
+"provincia": "Malleco",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Vicuña",
+"region": "Coquimbo",
+"provincia": "Elqui",
+"diocesis": "Arquidiócesis de La Serena"
+},
+{
+"nombre": "Vilcún",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Temuco"
+},
+{
+"nombre": "Villa Alegre",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Villa Alemana",
+"region": "Valparaíso",
+"provincia": "Marga Marga",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Villarica",
+"region": "La Araucanía",
+"provincia": "Cautín",
+"diocesis": "Diócesis de Villarrica"
+},
+{
+"nombre": "Vitacura",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+},
+{
+"nombre": "Viña del Mar",
+"region": "Valparaíso",
+"provincia": "Valparaíso",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Yerbas Buenas",
+"region": "Maule",
+"provincia": "Linares",
+"diocesis": "Diócesis de Linares"
+},
+{
+"nombre": "Yumbel",
+"region": "Biobío",
+"provincia": "Biobío",
+"diocesis": "Diócesis de Santa María de Los Ángeles"
+},
+{
+"nombre": "Yungay",
+"region": "Ñuble",
+"provincia": "Diguillín",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Zapallar",
+"region": "Valparaíso",
+"provincia": "Petorca",
+"diocesis": "Diócesis de Valparaíso"
+},
+{
+"nombre": "Ñiquén",
+"region": "Ñuble",
+"provincia": "Punilla",
+"diocesis": "Diócesis de San Bartolomé de Chillán"
+},
+{
+"nombre": "Ñuñoa",
+"region": "Metropolitana de Santiago",
+"provincia": "Santiago",
+"diocesis": "Arquidiócesis de Santiago"
+}
+]
