@@ -252,6 +252,13 @@ export default function AdminPage() {
               <span style={{ display: "block", fontSize: 12, marginTop: 4, color: "var(--text-soft)" }}>
                 Conectado a: <code>{meta.dbHost || "—"}</code> · {meta.totalSolicitudes} solicitud(es) y{" "}
                 {meta.totalEstablecimientos} establecimiento(s) en la base de datos
+                {meta.idsEnTablaSolicitudes && (
+                  <>
+                    <br />
+                    IDs en tabla solicitudes: [{meta.idsEnTablaSolicitudes.join(", ")}] · IDs devueltos por la
+                    consulta: [{meta.idsDevueltosPorConsulta.join(", ")}]
+                  </>
+                )}
               </span>
             )}
           </p>

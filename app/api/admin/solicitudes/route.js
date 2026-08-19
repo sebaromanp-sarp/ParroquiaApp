@@ -30,12 +30,15 @@ export async function GET(request) {
         (SELECT count(*) FROM solicitudes)::int AS total_solicitudes,
         (SELECT count(*) FROM establecimientos)::int AS total_establecimientos
     `;
+    const todosLosIds = await db`SELECT id FROM solicitudes ORDER BY id`;
 
     return NextResponse.json({
       meta: {
         dbHost: getDbHost(),
         totalSolicitudes: totales.total_solicitudes,
         totalEstablecimientos: totales.total_establecimientos,
+        idsEnTablaSolicitudes: todosLosIds.map((r) => r.id),
+        idsDevueltosPorConsulta: solicitudes.map((s) => s.id),
       },
       solicitudes: solicitudes.map((s) => ({
         id: s.id,
