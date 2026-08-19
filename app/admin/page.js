@@ -24,6 +24,9 @@ export default function AdminPage() {
   const [error, setError] = useState("");
   const [procesandoId, setProcesandoId] = useState(null);
   const [detalleId, setDetalleId] = useState(null);
+  const [actualizando, setActualizando] = useState(false);
+  const [ultimaActualizacion, setUltimaActualizacion] = useState(null);
+  const [nuevasDisponibles, setNuevasDisponibles] = useState(false);
 
   function toggleDetalle(id) {
     setDetalleId((actual) => (actual === id ? null : id));
@@ -39,6 +42,34 @@ export default function AdminPage() {
 
   useEffect(() => {
     if (autenticado) cargarSolicitudes();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autenticado]);
+
+  // Auto-actualización: revisa periódicamente si hay solicitudes nuevas,
+  // igual que un correo que llega solo, sin que el admin tenga que recargar.
+  useEffect(() => {
+    if (!autenticado) return;
+
+    const INTERVALO_MS = 15000; // 15 segundos
+    const intervalo = setInterval(() => {
+      if (document.visibilityState === "visible") {
+        cargarSolicitudes({ silencioso: true });
+      }
+    }, INTERVALO_MS);
+
+    function alVolverVisible() {
+      if (document.visibilityState === "visible") {
+        cargarSolicitudes({ silencioso: true });
+      }
+    }
+    document.addEventListener("visibilitychange", alVolverVisible);
+    window.addEventListener("focus", alVolverVisible);
+
+    return () => {
+      clearInterval(intervalo);
+      document.removeEventListener("visibilitychange", alVolverVisible);
+      window.removeEventListener("focus", alVolverVisible);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [autenticado]);
 
@@ -73,24 +104,42 @@ export default function AdminPage() {
     setSolicitudes([]);
   }
 
-  async function cargarSolicitudes() {
-    setCargando(true);
-    setError("");
+  async function cargarSolicitudes({ silencioso = false } = {}) {
+    if (silencioso) {
+      setActualizando(true);
+    } else {
+      setCargando(true);
+      setError("");
+    }
     try {
       const res = await fetch("/api/admin/solicitudes", {
         headers: { "x-admin-password": password },
+        cache: "no-store",
       });
       const data = await res.json();
       if (!res.ok) {
-        setError(data.error || "No se pudo cargar el listado.");
+        if (!silencioso) setError(data.error || "No se pudo cargar el listado.");
         if (res.status === 401) logout();
         return;
       }
-      setSolicitudes(data.solicitudes);
+
+      setSolicitudes((anteriores) => {
+        const pendientesAntes = anteriores.filter((s) => s.estado === "pendiente").length;
+        const pendientesAhora = data.solicitudes.filter((s) => s.estado === "pendiente").length;
+        if (silencioso && anteriores.length > 0 && pendientesAhora > pendientesAntes) {
+          setNuevasDisponibles(true);
+        }
+        return data.solicitudes;
+      });
+      setUltimaActualizacion(new Date());
     } catch {
-      setError("No se pudo conectar con el servidor.");
+      if (!silencioso) setError("No se pudo conectar con el servidor.");
     } finally {
-      setCargando(false);
+      if (silencioso) {
+        setActualizando(false);
+      } else {
+        setCargando(false);
+      }
     }
   }
 
@@ -169,6 +218,16 @@ export default function AdminPage() {
             <div style={{ display: "flex", gap: 10 }}>
               <button
                 className="btn btn-outline"
+                disabled={cargando || actualizando}
+                onClick={() => {
+                  setNuevasDisponibles(false);
+                  cargarSolicitudes();
+                }}
+              >
+                {actualizando ? "Actualizando..." : "↻ Actualizar"}
+              </button>
+              <button
+                className="btn btn-outline"
                 disabled={solicitudes.length === 0}
                 onClick={() => descargarCSV(solicitudes)}
               >
@@ -181,7 +240,24 @@ export default function AdminPage() {
           </div>
           <p className="page-subtitle">
             Revisa, aprueba o rechaza las solicitudes de renovación de Certificado de Idoneidad.
+            {ultimaActualizacion && (
+              <span style={{ display: "block", fontSize: 12, marginTop: 4 }}>
+                Última actualización: {ultimaActualizacion.toLocaleTimeString("es-CL")} · se
+                revisa automáticamente cada 15 segundos
+              </span>
+            )}
           </p>
+
+          {nuevasDisponibles && (
+            <div className="alert" style={{ background: "var(--bg-soft)", cursor: "pointer" }}
+              onClick={() => {
+                setNuevasDisponibles(false);
+                cargarSolicitudes();
+              }}
+            >
+              📩 Hay solicitudes nuevas — haz clic aquí (o espera, se actualiza solo) para verlas.
+            </div>
+          )}
 
           {error && <div className="alert alert-error">{error}</div>}
 
