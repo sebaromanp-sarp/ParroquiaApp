@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getDb } from "../../../../lib/db";
+import { getDb, getDbHost } from "../../../../lib/db";
 import { checkAdminAuth } from "../../../../lib/adminAuth";
 
 export const dynamic = "force-dynamic";
@@ -25,7 +25,18 @@ export async function GET(request) {
       ORDER BY s.fecha_solicitud DESC
     `;
 
+    const [totales] = await db`
+      SELECT
+        (SELECT count(*) FROM solicitudes)::int AS total_solicitudes,
+        (SELECT count(*) FROM establecimientos)::int AS total_establecimientos
+    `;
+
     return NextResponse.json({
+      meta: {
+        dbHost: getDbHost(),
+        totalSolicitudes: totales.total_solicitudes,
+        totalEstablecimientos: totales.total_establecimientos,
+      },
       solicitudes: solicitudes.map((s) => ({
         id: s.id,
         rut: s.rut_formateado,

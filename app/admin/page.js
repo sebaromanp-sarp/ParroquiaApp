@@ -27,6 +27,7 @@ export default function AdminPage() {
   const [actualizando, setActualizando] = useState(false);
   const [ultimaActualizacion, setUltimaActualizacion] = useState(null);
   const [nuevasDisponibles, setNuevasDisponibles] = useState(false);
+  const [meta, setMeta] = useState(null);
 
   function toggleDetalle(id) {
     setDetalleId((actual) => (actual === id ? null : id));
@@ -131,6 +132,7 @@ export default function AdminPage() {
         }
         return data.solicitudes;
       });
+      setMeta(data.meta || null);
       setUltimaActualizacion(new Date());
     } catch {
       if (!silencioso) setError("No se pudo conectar con el servidor.");
@@ -244,6 +246,12 @@ export default function AdminPage() {
               <span style={{ display: "block", fontSize: 12, marginTop: 4 }}>
                 Última actualización: {ultimaActualizacion.toLocaleTimeString("es-CL")} · se
                 revisa automáticamente cada 15 segundos
+              </span>
+            )}
+            {meta && (
+              <span style={{ display: "block", fontSize: 12, marginTop: 4, color: "var(--text-soft)" }}>
+                Conectado a: <code>{meta.dbHost || "—"}</code> · {meta.totalSolicitudes} solicitud(es) y{" "}
+                {meta.totalEstablecimientos} establecimiento(s) en la base de datos
               </span>
             )}
           </p>
