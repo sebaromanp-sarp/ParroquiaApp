@@ -31,6 +31,19 @@ export async function GET(request) {
         (SELECT count(*) FROM establecimientos)::int AS total_establecimientos
     `;
     const todosLosIds = await db`SELECT id FROM solicitudes ORDER BY id`;
+    const idsSinGroupBy = await db`
+      SELECT s.id FROM solicitudes s LEFT JOIN establecimientos e ON e.solicitud_id = s.id ORDER BY s.id
+    `;
+    const idsDevueltos = new Set(solicitudes.map((s) => s.id));
+    const idsFaltantes = todosLosIds.map((r) => r.id).filter((id) => !idsDevueltos.has(id));
+    const filasFaltantes = idsFaltantes.length
+      ? await db`
+          SELECT id, nombres, apellido_paterno, nacionalidad, email, telefono, estado, fecha_solicitud
+          FROM solicitudes
+          WHERE id = ANY(${idsFaltantes})
+          ORDER BY id
+        `
+      : [];
 
     return NextResponse.json({
       meta: {
@@ -39,6 +52,8 @@ export async function GET(request) {
         totalEstablecimientos: totales.total_establecimientos,
         idsEnTablaSolicitudes: todosLosIds.map((r) => r.id),
         idsDevueltosPorConsulta: solicitudes.map((s) => s.id),
+        idsConJoinSinGroupBy: idsSinGroupBy.map((r) => r.id),
+        filasFaltantes,
       },
       solicitudes: solicitudes.map((s) => ({
         id: s.id,

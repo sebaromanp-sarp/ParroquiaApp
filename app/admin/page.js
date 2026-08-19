@@ -256,7 +256,14 @@ export default function AdminPage() {
                   <>
                     <br />
                     IDs en tabla solicitudes: [{meta.idsEnTablaSolicitudes.join(", ")}] · IDs devueltos por la
-                    consulta: [{meta.idsDevueltosPorConsulta.join(", ")}]
+                    consulta con GROUP BY: [{meta.idsDevueltosPorConsulta.join(", ")}] · IDs con el JOIN sin
+                    GROUP BY: [{meta.idsConJoinSinGroupBy.join(", ")}]
+                  </>
+                )}
+                {meta.filasFaltantes && meta.filasFaltantes.length > 0 && (
+                  <>
+                    <br />
+                    Filas que faltan: {JSON.stringify(meta.filasFaltantes)}
                   </>
                 )}
               </span>
