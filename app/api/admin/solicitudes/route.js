@@ -12,48 +12,34 @@ export async function GET(request) {
 
   try {
     const db = getDb();
-    const solicitudes = await db`
-      SELECT s.id, s.rut_formateado, s.nombres, s.apellido_paterno, s.apellido_materno,
-             s.nacionalidad, s.direccion_particular, s.comuna_residencia,
-             s.email, s.telefono, s.diocesis, s.estado, s.codigo_verificacion, s.observaciones,
-             s.fecha_solicitud, s.fecha_resolucion, s.fecha_vencimiento,
-             COALESCE(json_agg(json_build_object('nombre', e.nombre, 'direccion', e.direccion, 'comuna', e.comuna))
-                      FILTER (WHERE e.id IS NOT NULL), '[]') AS establecimientos
-      FROM solicitudes s
-      LEFT JOIN establecimientos e ON e.solicitud_id = s.id
-      GROUP BY s.id
-      ORDER BY s.fecha_solicitud DESC
-    `;
 
-    const [totales] = await db`
-      SELECT
-        (SELECT count(*) FROM solicitudes)::int AS total_solicitudes,
-        (SELECT count(*) FROM establecimientos)::int AS total_establecimientos
-    `;
-    const todosLosIds = await db`SELECT id FROM solicitudes ORDER BY id`;
-    const idsSinGroupBy = await db`
-      SELECT s.id FROM solicitudes s LEFT JOIN establecimientos e ON e.solicitud_id = s.id ORDER BY s.id
-    `;
-    const idsDevueltos = new Set(solicitudes.map((s) => s.id));
-    const idsFaltantes = todosLosIds.map((r) => r.id).filter((id) => !idsDevueltos.has(id));
-    const filasFaltantes = idsFaltantes.length
-      ? await db`
-          SELECT id, nombres, apellido_paterno, nacionalidad, email, telefono, estado, fecha_solicitud
-          FROM solicitudes
-          WHERE id = ANY(${idsFaltantes})
-          ORDER BY id
-        `
-      : [];
+    // Se traen solicitudes y establecimientos por separado (en vez de un solo
+    // JOIN + GROUP BY + json_agg) y se combinan acá: esa combinación llegó a
+    // devolver menos solicitudes de las que realmente existen en la tabla.
+    const [solicitudes, establecimientos] = await Promise.all([
+      db`
+        SELECT id, rut_formateado, nombres, apellido_paterno, apellido_materno,
+               nacionalidad, direccion_particular, comuna_residencia,
+               email, telefono, diocesis, estado, codigo_verificacion, observaciones,
+               fecha_solicitud, fecha_resolucion, fecha_vencimiento
+        FROM solicitudes
+        ORDER BY fecha_solicitud DESC
+      `,
+      db`SELECT solicitud_id, nombre, direccion, comuna FROM establecimientos`,
+    ]);
+
+    const establecimientosPorSolicitud = new Map();
+    for (const e of establecimientos) {
+      const lista = establecimientosPorSolicitud.get(e.solicitud_id) || [];
+      lista.push({ nombre: e.nombre, direccion: e.direccion, comuna: e.comuna });
+      establecimientosPorSolicitud.set(e.solicitud_id, lista);
+    }
 
     return NextResponse.json({
       meta: {
         dbHost: getDbHost(),
-        totalSolicitudes: totales.total_solicitudes,
-        totalEstablecimientos: totales.total_establecimientos,
-        idsEnTablaSolicitudes: todosLosIds.map((r) => r.id),
-        idsDevueltosPorConsulta: solicitudes.map((s) => s.id),
-        idsConJoinSinGroupBy: idsSinGroupBy.map((r) => r.id),
-        filasFaltantes,
+        totalSolicitudes: solicitudes.length,
+        totalEstablecimientos: establecimientos.length,
       },
       solicitudes: solicitudes.map((s) => ({
         id: s.id,
@@ -74,7 +60,7 @@ export async function GET(request) {
         fechaSolicitud: s.fecha_solicitud,
         fechaResolucion: s.fecha_resolucion,
         fechaVencimiento: s.fecha_vencimiento,
-        establecimientos: s.establecimientos,
+        establecimientos: establecimientosPorSolicitud.get(s.id) || [],
       })),
     });
   } catch (err) {
