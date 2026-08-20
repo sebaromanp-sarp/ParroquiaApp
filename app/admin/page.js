@@ -51,7 +51,7 @@ export default function AdminPage() {
   useEffect(() => {
     if (!autenticado) return;
 
-    const INTERVALO_MS = 15000; // 15 segundos
+    const INTERVALO_MS = 30 * 60 * 1000; // 30 minutos
     const intervalo = setInterval(() => {
       if (document.visibilityState === "visible") {
         cargarSolicitudes({ silencioso: true });
@@ -245,7 +245,7 @@ export default function AdminPage() {
             {ultimaActualizacion && (
               <span style={{ display: "block", fontSize: 12, marginTop: 4 }}>
                 Última actualización: {ultimaActualizacion.toLocaleTimeString("es-CL")} · se
-                revisa automáticamente cada 15 segundos
+                revisa automáticamente cada 30 minutos
               </span>
             )}
             {meta && (
