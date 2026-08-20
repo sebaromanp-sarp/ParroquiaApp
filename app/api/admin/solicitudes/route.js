@@ -35,21 +35,11 @@ export async function GET(request) {
       establecimientosPorSolicitud.set(e.solicitud_id, lista);
     }
 
-    const [{ max_id }] = await db`SELECT max(id) AS max_id FROM solicitudes`;
-    const ultimas3 = await db`
-      SELECT id, nombres, apellido_paterno, fecha_solicitud
-      FROM solicitudes
-      ORDER BY id DESC
-      LIMIT 3
-    `;
-
     return NextResponse.json({
       meta: {
         dbHost: getDbHost(),
         totalSolicitudes: solicitudes.length,
         totalEstablecimientos: establecimientos.length,
-        maxId: max_id,
-        ultimas3,
       },
       solicitudes: solicitudes.map((s) => ({
         id: s.id,

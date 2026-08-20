@@ -252,12 +252,6 @@ export default function AdminPage() {
               <span style={{ display: "block", fontSize: 12, marginTop: 4, color: "var(--text-soft)" }}>
                 Conectado a: <code>{meta.dbHost || "—"}</code> · {meta.totalSolicitudes} solicitud(es) y{" "}
                 {meta.totalEstablecimientos} establecimiento(s) en la base de datos
-                {meta.maxId !== undefined && (
-                  <>
-                    <br />
-                    max(id): {meta.maxId} · últimas 3: {JSON.stringify(meta.ultimas3)}
-                  </>
-                )}
               </span>
             )}
           </p>
