@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getDb, getDbHost } from "../../../../lib/db";
+import { getDb, getDbHost, ensureSchema } from "../../../../lib/db";
 import { checkAdminAuth } from "../../../../lib/adminAuth";
 
 export const dynamic = "force-dynamic";
@@ -12,6 +12,7 @@ export async function GET(request) {
 
   try {
     const db = getDb();
+    await ensureSchema();
 
     // Se traen solicitudes y establecimientos por separado (en vez de un solo
     // JOIN + GROUP BY + json_agg) y se combinan acá: esa combinación llegó a
@@ -20,7 +21,9 @@ export async function GET(request) {
       db`
         SELECT id, rut_formateado, nombres, apellido_paterno, apellido_materno,
                nacionalidad, direccion_particular, comuna_residencia,
-               email, telefono, diocesis, estado, codigo_verificacion, observaciones,
+               email, telefono, cantidad_horas, niveles_educacion,
+               antecedentes_academicos, actividades_vicaria,
+               diocesis, estado, codigo_verificacion, observaciones,
                fecha_solicitud, fecha_resolucion, fecha_vencimiento
         FROM solicitudes
         ORDER BY fecha_solicitud DESC
@@ -53,6 +56,10 @@ export async function GET(request) {
         comunaResidencia: s.comuna_residencia,
         email: s.email,
         telefono: s.telefono,
+        cantidadHoras: s.cantidad_horas,
+        nivelesEducacion: s.niveles_educacion,
+        antecedentesAcademicos: s.antecedentes_academicos,
+        actividadesVicaria: s.actividades_vicaria,
         diocesis: s.diocesis,
         estado: s.estado,
         codigoVerificacion: s.codigo_verificacion,

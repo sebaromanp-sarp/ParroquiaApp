@@ -368,9 +368,31 @@ export default function AdminPage() {
                                 <span className="detalle-label">Comuna de residencia</span>
                                 <span className="detalle-valor">{s.comunaResidencia || "—"}</span>
                               </div>
+                              <div>
+                                <span className="detalle-label">Cantidad de horas</span>
+                                <span className="detalle-valor">
+                                  {s.cantidadHoras ? `${s.cantidadHoras} horas` : "—"}
+                                </span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Educación en que ejerce</span>
+                                <span className="detalle-valor">{s.nivelesEducacion || "—"}</span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Antecedentes académicos</span>
+                                <span className="detalle-valor">
+                                  {s.antecedentesAcademicos || "—"}
+                                </span>
+                              </div>
                               <div className="detalle-full">
                                 <span className="detalle-label">Dirección particular</span>
                                 <span className="detalle-valor">{s.direccionParticular || "—"}</span>
+                              </div>
+                              <div className="detalle-full">
+                                <span className="detalle-label">Actividades por la vicaría</span>
+                                <span className="detalle-valor" style={{ whiteSpace: "pre-wrap" }}>
+                                  {s.actividadesVicaria || "—"}
+                                </span>
                               </div>
                             </div>
 

@@ -14,6 +14,10 @@ CREATE TABLE IF NOT EXISTS solicitudes (
   comuna_residencia TEXT,
   email TEXT NOT NULL,
   telefono TEXT,
+  cantidad_horas INTEGER,
+  niveles_educacion TEXT,           -- "Educación Básica", "Educación Media" o ambas separadas por coma
+  antecedentes_academicos TEXT,     -- Profesor General Básica | Profesor otras asignaturas
+  actividades_vicaria TEXT,
   diocesis TEXT,
   estado TEXT NOT NULL DEFAULT 'pendiente', -- pendiente | aprobado | rechazado
   codigo_verificacion TEXT UNIQUE,
@@ -30,6 +34,12 @@ CREATE TABLE IF NOT EXISTS establecimientos (
   direccion TEXT,
   comuna TEXT NOT NULL
 );
+
+-- Migraciones incrementales: se aplican también sobre bases ya creadas.
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS cantidad_horas INTEGER;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS niveles_educacion TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS antecedentes_academicos TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS actividades_vicaria TEXT;
 
 CREATE INDEX IF NOT EXISTS idx_solicitudes_rut ON solicitudes (rut);
 CREATE INDEX IF NOT EXISTS idx_solicitudes_codigo ON solicitudes (codigo_verificacion);

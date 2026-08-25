@@ -251,6 +251,40 @@ a {
   color: var(--red);
 }
 
+/* Caja de opciones múltiples (checkboxes) */
+.opciones-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  align-items: center;
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  min-height: 44px;
+}
+
+.opciones-box.error {
+  border-color: var(--red);
+}
+
+.opcion-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.opcion-check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--teal);
+  cursor: pointer;
+}
+
 .establecimiento-block {
   background: var(--bg-soft);
   border: 1px solid var(--border);

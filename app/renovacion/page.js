@@ -10,6 +10,11 @@ import { IconPersona, IconEdificio, IconDiocesis } from "../../components/Sectio
 import { NACIONALIDADES } from "../../lib/nacionalidades";
 import { diocesisDeComuna } from "../../lib/comunas";
 import { validaRut, formateaRut } from "../../lib/rut";
+import {
+  HORAS_OPCIONES,
+  NIVELES_EDUCACION,
+  ANTECEDENTES_ACADEMICOS,
+} from "../../lib/validacion";
 
 const ESTABLECIMIENTO_VACIO = { nombre: "", direccion: "", comuna: "" };
 
@@ -24,6 +29,10 @@ export default function RenovacionPage() {
     comunaResidencia: "",
     email: "",
     telefono: "",
+    cantidadHoras: "",
+    nivelesEducacion: [],
+    antecedentesAcademicos: "",
+    actividadesVicaria: "",
   });
   const [establecimientos, setEstablecimientos] = useState([{ ...ESTABLECIMIENTO_VACIO }]);
   const [errores, setErrores] = useState({});
@@ -34,6 +43,15 @@ export default function RenovacionPage() {
 
   function setCampo(campo, valor) {
     setForm((f) => ({ ...f, [campo]: valor }));
+  }
+
+  function toggleNivel(nivel) {
+    setForm((f) => ({
+      ...f,
+      nivelesEducacion: f.nivelesEducacion.includes(nivel)
+        ? f.nivelesEducacion.filter((n) => n !== nivel)
+        : [...f.nivelesEducacion, nivel],
+    }));
   }
 
   function setCampoEst(idx, campo, valor) {
@@ -278,6 +296,79 @@ export default function RenovacionPage() {
                   className={errores.telefono ? "error" : ""}
                 />
                 {errores.telefono && <span className="field-error">{errores.telefono}</span>}
+              </div>
+
+              <div className="field">
+                <label htmlFor="cantidadHoras">Cantidad de horas</label>
+                <select
+                  id="cantidadHoras"
+                  value={form.cantidadHoras}
+                  onChange={(e) => setCampo("cantidadHoras", e.target.value)}
+                  className={errores.cantidadHoras ? "error" : ""}
+                >
+                  <option value="">Selecciona la cantidad de horas...</option>
+                  {HORAS_OPCIONES.map((h) => (
+                    <option key={h} value={h}>
+                      {h} horas
+                    </option>
+                  ))}
+                </select>
+                {errores.cantidadHoras && (
+                  <span className="field-error">{errores.cantidadHoras}</span>
+                )}
+              </div>
+
+              <div className="field">
+                <label>¿En qué educación va a ejercer sus clases?</label>
+                <div
+                  className={`opciones-box ${errores.nivelesEducacion ? "error" : ""}`}
+                >
+                  {NIVELES_EDUCACION.map((nivel) => (
+                    <label className="opcion-check" key={nivel}>
+                      <input
+                        type="checkbox"
+                        checked={form.nivelesEducacion.includes(nivel)}
+                        onChange={() => toggleNivel(nivel)}
+                      />
+                      <span>{nivel}</span>
+                    </label>
+                  ))}
+                </div>
+                <span className="hint">Puedes seleccionar una o ambas opciones.</span>
+                {errores.nivelesEducacion && (
+                  <span className="field-error">{errores.nivelesEducacion}</span>
+                )}
+              </div>
+
+              <div className="field">
+                <label htmlFor="antecedentesAcademicos">Antecedentes académicos</label>
+                <select
+                  id="antecedentesAcademicos"
+                  value={form.antecedentesAcademicos}
+                  onChange={(e) => setCampo("antecedentesAcademicos", e.target.value)}
+                  className={errores.antecedentesAcademicos ? "error" : ""}
+                >
+                  <option value="">Selecciona una opción...</option>
+                  {ANTECEDENTES_ACADEMICOS.map((a) => (
+                    <option key={a} value={a}>
+                      {a}
+                    </option>
+                  ))}
+                </select>
+                {errores.antecedentesAcademicos && (
+                  <span className="field-error">{errores.antecedentesAcademicos}</span>
+                )}
+              </div>
+
+              <div className="field field-full">
+                <label htmlFor="actividadesVicaria">Actividades por la vicaría</label>
+                <textarea
+                  id="actividadesVicaria"
+                  rows={4}
+                  value={form.actividadesVicaria}
+                  onChange={(e) => setCampo("actividadesVicaria", e.target.value)}
+                  placeholder="Describe las actividades que realizas o has realizado por la vicaría."
+                />
               </div>
             </div>
 

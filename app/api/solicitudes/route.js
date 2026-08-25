@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getDb } from "../../../lib/db";
+import { getDb, ensureSchema } from "../../../lib/db";
 import { validaSolicitud } from "../../../lib/validacion";
 import { limpiaRut, validaRut } from "../../../lib/rut";
 
@@ -20,15 +20,18 @@ export async function POST(request) {
 
   try {
     const db = getDb();
+    await ensureSchema();
 
     const [solicitud] = await db`
       INSERT INTO solicitudes (
         rut, rut_formateado, nombres, apellido_paterno, apellido_materno,
         nacionalidad, direccion_particular, comuna_residencia, email, telefono,
+        cantidad_horas, niveles_educacion, antecedentes_academicos, actividades_vicaria,
         diocesis, estado
       ) VALUES (
         ${data.rut}, ${data.rutFormateado}, ${data.nombres}, ${data.apellidoPaterno}, ${data.apellidoMaterno || null},
         ${data.nacionalidad}, ${data.direccionParticular || null}, ${data.comunaResidencia || null}, ${data.email}, ${data.telefono},
+        ${data.cantidadHoras}, ${data.nivelesEducacion.join(", ")}, ${data.antecedentesAcademicos}, ${data.actividadesVicaria || null},
         ${data.diocesis}, 'pendiente'
       )
       RETURNING id, rut_formateado, diocesis, estado, fecha_solicitud
@@ -72,8 +75,10 @@ export async function GET(request) {
 
   try {
     const db = getDb();
+    await ensureSchema();
     const solicitudes = await db`
       SELECT id, rut_formateado, nombres, apellido_paterno, apellido_materno, diocesis,
+             cantidad_horas, niveles_educacion, antecedentes_academicos, actividades_vicaria,
              estado, codigo_verificacion, observaciones, fecha_solicitud, fecha_resolucion, fecha_vencimiento
       FROM solicitudes
       WHERE rut = ${rutLimpio}
@@ -90,6 +95,10 @@ export async function GET(request) {
         rut: s.rut_formateado,
         nombreCompleto: `${s.nombres} ${s.apellido_paterno} ${s.apellido_materno || ""}`.trim(),
         diocesis: s.diocesis,
+        cantidadHoras: s.cantidad_horas,
+        nivelesEducacion: s.niveles_educacion,
+        antecedentesAcademicos: s.antecedentes_academicos,
+        actividadesVicaria: s.actividades_vicaria,
         estado: s.estado,
         codigoVerificacion: s.estado === "aprobado" ? s.codigo_verificacion : null,
         observaciones: s.observaciones,
