@@ -39,7 +39,7 @@
 "nombre": "Andacollo",
 "region": "Coquimbo",
 "provincia": "Elqui",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Angol",
@@ -51,7 +51,7 @@
 "nombre": "Antofagasta",
 "region": "Antofagasta",
 "provincia": "Antofagasta",
-"diocesis": "Arquidiócesis de Antofagasta"
+"diocesis": "Diócesis de Antofagasta"
 },
 {
 "nombre": "Antuco",
@@ -69,7 +69,7 @@
 "nombre": "Arauco",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Arica",
@@ -123,7 +123,7 @@
 "nombre": "Calbuco",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Caldera",
@@ -201,25 +201,25 @@
 "nombre": "Cañete",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Cerrillos",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Cerro Navia",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Chaitén",
 "region": "Los Lagos",
 "provincia": "Palena",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Chanco",
@@ -237,7 +237,7 @@
 "nombre": "Chiguayante",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Chile Chico",
@@ -297,7 +297,7 @@
 "nombre": "Cochamó",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Cochrane",
@@ -351,7 +351,7 @@
 "nombre": "Colina",
 "region": "Metropolitana de Santiago",
 "provincia": "Chacabuco",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Collipulli",
@@ -369,19 +369,19 @@
 "nombre": "Combarbalá",
 "region": "Coquimbo",
 "provincia": "Limarí",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Concepción",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Conchalí",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Concón",
@@ -399,7 +399,7 @@
 "nombre": "Contulmo",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Copiapó",
@@ -411,13 +411,13 @@
 "nombre": "Coquimbo",
 "region": "Coquimbo",
 "provincia": "Elqui",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Coronel",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Corral",
@@ -453,7 +453,7 @@
 "nombre": "Curanilahue",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Curarrehue",
@@ -495,7 +495,7 @@
 "nombre": "El Bosque",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "El Carmen",
@@ -507,7 +507,7 @@
 "nombre": "El Monte",
 "region": "Metropolitana de Santiago",
 "provincia": "Talagante",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "El Quisco",
@@ -537,13 +537,13 @@
 "nombre": "Estación Central",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Florida",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Freire",
@@ -561,19 +561,19 @@
 "nombre": "Fresia",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Frutillar",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Futaleufú",
 "region": "Los Lagos",
 "provincia": "Palena",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Futrono",
@@ -621,7 +621,7 @@
 "nombre": "Hualaihué",
 "region": "Los Lagos",
 "provincia": "Palena",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Hualañé",
@@ -633,13 +633,13 @@
 "nombre": "Hualpén",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Hualqui",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Huara",
@@ -657,7 +657,7 @@
 "nombre": "Huechuraba",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Illapel",
@@ -669,7 +669,7 @@
 "nombre": "Independencia",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Iquique",
@@ -681,7 +681,7 @@
 "nombre": "Isla de Maipo",
 "region": "Metropolitana de Santiago",
 "provincia": "Talagante",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Isla de Pascua",
@@ -705,7 +705,7 @@
 "nombre": "La Cisterna",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "La Cruz",
@@ -723,19 +723,19 @@
 "nombre": "La Florida",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "La Granja",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "La Higuera",
 "region": "Coquimbo",
 "provincia": "Elqui",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "La Ligua",
@@ -747,19 +747,19 @@
 "nombre": "La Pintana",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "La Reina",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "La Serena",
 "region": "Coquimbo",
 "provincia": "Elqui",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "La Unión",
@@ -795,7 +795,7 @@
 "nombre": "Lampa",
 "region": "Metropolitana de Santiago",
 "provincia": "Chacabuco",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Lanco",
@@ -813,7 +813,7 @@
 "nombre": "Las Condes",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Lautaro",
@@ -825,7 +825,7 @@
 "nombre": "Lebu",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Licantén",
@@ -855,7 +855,7 @@
 "nombre": "Llanquihue",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Llay-Llay",
@@ -867,19 +867,19 @@
 "nombre": "Lo Barnechea",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Lo Espejo",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Lo Prado",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Lolol",
@@ -921,7 +921,7 @@
 "nombre": "Los Muermos",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Los Sauces",
@@ -939,7 +939,7 @@
 "nombre": "Los Álamos",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Los Ángeles",
@@ -951,7 +951,7 @@
 "nombre": "Lota",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Lumaco",
@@ -969,13 +969,13 @@
 "nombre": "Macul",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Maipú",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Malloa",
@@ -999,7 +999,7 @@
 "nombre": "María Elena",
 "region": "Antofagasta",
 "provincia": "Tocopilla",
-"diocesis": "Arquidiócesis de Antofagasta"
+"diocesis": "Diócesis de Antofagasta"
 },
 {
 "nombre": "María Pinto",
@@ -1017,13 +1017,13 @@
 "nombre": "Maullín",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Mejillones",
 "region": "Antofagasta",
 "provincia": "Antofagasta",
-"diocesis": "Arquidiócesis de Antofagasta"
+"diocesis": "Diócesis de Antofagasta"
 },
 {
 "nombre": "Melipeuco",
@@ -1047,7 +1047,7 @@
 "nombre": "Monte Patria",
 "region": "Coquimbo",
 "provincia": "Limarí",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Mostazal",
@@ -1149,13 +1149,13 @@
 "nombre": "Ovalle",
 "region": "Coquimbo",
 "provincia": "Limarí",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Padre Hurtado",
 "region": "Metropolitana de Santiago",
 "provincia": "Talagante",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Padre Las Casas",
@@ -1167,7 +1167,7 @@
 "nombre": "Paihuano",
 "region": "Coquimbo",
 "provincia": "Elqui",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Paillaco",
@@ -1185,7 +1185,7 @@
 "nombre": "Palena",
 "region": "Los Lagos",
 "provincia": "Palena",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Palmilla",
@@ -1227,7 +1227,7 @@
 "nombre": "Pedro Aguirre Cerda",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Pelarco",
@@ -1257,7 +1257,7 @@
 "nombre": "Penco",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Peralillo",
@@ -1287,13 +1287,13 @@
 "nombre": "Peñaflor",
 "region": "Metropolitana de Santiago",
 "provincia": "Talagante",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Peñalolén",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Pica",
@@ -1323,7 +1323,7 @@
 "nombre": "Pirque",
 "region": "Metropolitana de Santiago",
 "provincia": "Cordillera",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Pitrufquén",
@@ -1365,7 +1365,7 @@
 "nombre": "Providencia",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Puchuncaví",
@@ -1383,19 +1383,19 @@
 "nombre": "Pudahuel",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Puente Alto",
 "region": "Metropolitana de Santiago",
 "provincia": "Cordillera",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Puerto Montt",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Puerto Octay",
@@ -1407,7 +1407,7 @@
 "nombre": "Puerto Varas",
 "region": "Los Lagos",
 "provincia": "Llanquihue",
-"diocesis": "Arquidiócesis de Puerto Montt"
+"diocesis": "Diócesis de Puerto Montt"
 },
 {
 "nombre": "Pumanque",
@@ -1419,7 +1419,7 @@
 "nombre": "Punitaqui",
 "region": "Coquimbo",
 "provincia": "Limarí",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Punta Arenas",
@@ -1491,7 +1491,7 @@
 "nombre": "Quilicura",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Quilleco",
@@ -1527,7 +1527,7 @@
 "nombre": "Quinta Normal",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Quinta de Tilcoco",
@@ -1563,7 +1563,7 @@
 "nombre": "Recoleta",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Renaico",
@@ -1575,7 +1575,7 @@
 "nombre": "Renca",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Rengo",
@@ -1629,7 +1629,7 @@
 "nombre": "Río Hurtado",
 "region": "Coquimbo",
 "provincia": "Limarí",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Río Ibáñez",
@@ -1737,13 +1737,13 @@
 "nombre": "San Joaquín",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "San José de Maipo",
 "region": "Metropolitana de Santiago",
 "provincia": "Cordillera",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "San Juan de la Costa",
@@ -1755,7 +1755,7 @@
 "nombre": "San Miguel",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "San Nicolás",
@@ -1785,7 +1785,7 @@
 "nombre": "San Pedro de La Paz",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "San Rafael",
@@ -1797,7 +1797,7 @@
 "nombre": "San Ramón",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "San Rosendo",
@@ -1827,7 +1827,7 @@
 "nombre": "Santa Juana",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Santa María",
@@ -1839,7 +1839,7 @@
 "nombre": "Santiago",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Santo Domingo",
@@ -1851,13 +1851,13 @@
 "nombre": "Sierra Gorda",
 "region": "Antofagasta",
 "provincia": "Antofagasta",
-"diocesis": "Arquidiócesis de Antofagasta"
+"diocesis": "Diócesis de Antofagasta"
 },
 {
 "nombre": "Talagante",
 "region": "Metropolitana de Santiago",
 "provincia": "Talagante",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Talca",
@@ -1869,13 +1869,13 @@
 "nombre": "Talcahuano",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Taltal",
 "region": "Antofagasta",
 "provincia": "Antofagasta",
-"diocesis": "Arquidiócesis de Antofagasta"
+"diocesis": "Diócesis de Antofagasta"
 },
 {
 "nombre": "Temuco",
@@ -1905,7 +1905,7 @@
 "nombre": "Tiltil",
 "region": "Metropolitana de Santiago",
 "provincia": "Chacabuco",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Timaukel",
@@ -1917,13 +1917,13 @@
 "nombre": "Tirúa",
 "region": "Biobío",
 "provincia": "Arauco",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Tocopilla",
 "region": "Antofagasta",
 "provincia": "Tocopilla",
-"diocesis": "Arquidiócesis de Antofagasta"
+"diocesis": "Diócesis de Antofagasta"
 },
 {
 "nombre": "Toltén",
@@ -1935,7 +1935,7 @@
 "nombre": "Tomé",
 "region": "Biobío",
 "provincia": "Concepción",
-"diocesis": "Arquidiócesis de Concepción"
+"diocesis": "Diócesis de Concepción"
 },
 {
 "nombre": "Torres del Paine",
@@ -2001,7 +2001,7 @@
 "nombre": "Vicuña",
 "region": "Coquimbo",
 "provincia": "Elqui",
-"diocesis": "Arquidiócesis de La Serena"
+"diocesis": "Diócesis de La Serena"
 },
 {
 "nombre": "Vilcún",
@@ -2031,7 +2031,7 @@
 "nombre": "Vitacura",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 },
 {
 "nombre": "Viña del Mar",
@@ -2073,6 +2073,6 @@
 "nombre": "Ñuñoa",
 "region": "Metropolitana de Santiago",
 "provincia": "Santiago",
-"diocesis": "Arquidiócesis de Santiago"
+"diocesis": "Diócesis de Santiago"
 }
 ]
