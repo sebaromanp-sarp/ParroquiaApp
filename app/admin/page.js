@@ -203,7 +203,6 @@ export default function AdminPage() {
           </div>
         </main>
         <Footer />
-        <div className="bottom-bar" />
       </div>
     );
   }
@@ -426,7 +425,6 @@ export default function AdminPage() {
         </div>
       </main>
       <Footer />
-      <div className="bottom-bar" />
     </div>
   );
 }

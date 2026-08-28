@@ -168,7 +168,6 @@ export default function RenovacionPage() {
           </div>
         </main>
         <Footer />
-        <div className="bottom-bar" />
       </div>
     );
   }
@@ -479,7 +478,6 @@ export default function RenovacionPage() {
         </div>
       </main>
       <Footer />
-      <div className="bottom-bar" />
     </div>
   );
 }

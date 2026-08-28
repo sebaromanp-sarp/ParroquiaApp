@@ -154,7 +154,6 @@ export default function EstadoPage() {
         </div>
       </main>
       <Footer />
-      <div className="bottom-bar" />
     </div>
   );
 }

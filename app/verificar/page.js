@@ -120,7 +120,6 @@ export default function VerificarPage() {
         </div>
       </main>
       <Footer />
-      <div className="bottom-bar" />
     </div>
   );
 }

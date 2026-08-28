@@ -4,7 +4,6 @@ import Logo from "./Logo";
 export default function Header() {
   return (
     <>
-      <div className="top-bar" />
       <div className="header">
         <Link href="/" className="header-logo">
           <Logo />
