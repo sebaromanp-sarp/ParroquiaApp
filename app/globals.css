@@ -596,7 +596,9 @@ footer.site-footer {
 .footer-banner {
   display: block;
   width: 100%;
+  max-width: 1600px;
   height: auto;
+  margin: 0 auto;
 }
 
 /* Admin */
