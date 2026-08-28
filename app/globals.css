@@ -595,8 +595,8 @@ footer.site-footer {
 
 .footer-banner {
   display: block;
-  width: 100%;
-  max-width: 1600px;
+  width: 50%;
+  max-width: 800px;
   height: auto;
   margin: 0 auto;
 }
