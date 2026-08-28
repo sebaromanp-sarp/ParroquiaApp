@@ -595,10 +595,20 @@ footer.site-footer {
 
 .footer-banner {
   display: block;
-  width: 50%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1600px;
   height: auto;
   margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .footer-banner {
+    width: 100%;
+    max-width: none;
+    height: 92px;
+    object-fit: cover;
+    object-position: left center;
+  }
 }
 
 /* Admin */
