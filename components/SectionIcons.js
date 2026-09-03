@@ -30,3 +30,34 @@ export function IconDiocesis({ size = 22, color = "#e8714a" }) {
     </svg>
   );
 }
+
+export function IconPastoral({ size = 22, color = "#e8714a" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 3v8M8.5 7.5h7" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+      <path
+        d="M6 21c0-4.5 2.5-6.8 6-6.8s6 2.3 6 6.8"
+        stroke={color}
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="12" cy="11.2" r="2.3" stroke={color} strokeWidth="1.8" />
+    </svg>
+  );
+}
+
+export function IconAcademico({ size = 22, color = "#e8714a" }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M12 5.5 3 9.5l9 4 9-4-9-4z"
+        stroke={color}
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
+      <path d="M7 11.5v4.3c0 1.4 2.3 2.7 5 2.7s5-1.3 5-2.7v-4.3" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+      <path d="M20 10v5.5" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  );
+}

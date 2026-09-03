@@ -20,21 +20,32 @@ export async function GET(request) {
     const [solicitudes, establecimientos] = await Promise.all([
       db`
         SELECT id, rut_formateado, nombres, apellido_paterno, apellido_materno,
-               nacionalidad, direccion_particular, comuna_residencia,
+               nacionalidad, fecha_nacimiento, estado_civil,
+               direccion_particular, comuna_residencia,
                email, telefono, cantidad_horas, niveles_educacion,
-               antecedentes_academicos, actividades_vicaria,
+               antecedentes_academicos, actividades_vicaria, actividades_vicaria_anio,
+               parroquia, nombre_parroco, actividad_pastoral, sacramentos,
+               titulo_profesional, titulo_institucion, titulo_anio,
+               regularizacion_programa, regularizacion_institucion, regularizacion_nivel,
+               perfeccionamiento,
                diocesis, estado, codigo_verificacion, observaciones,
                fecha_solicitud, fecha_resolucion, fecha_vencimiento
         FROM solicitudes
         ORDER BY fecha_solicitud DESC
       `,
-      db`SELECT solicitud_id, nombre, direccion, comuna FROM establecimientos`,
+      db`SELECT solicitud_id, nombre, direccion, comuna, cantidad_horas, niveles FROM establecimientos`,
     ]);
 
     const establecimientosPorSolicitud = new Map();
     for (const e of establecimientos) {
       const lista = establecimientosPorSolicitud.get(e.solicitud_id) || [];
-      lista.push({ nombre: e.nombre, direccion: e.direccion, comuna: e.comuna });
+      lista.push({
+        nombre: e.nombre,
+        direccion: e.direccion,
+        comuna: e.comuna,
+        cantidadHoras: e.cantidad_horas,
+        niveles: e.niveles,
+      });
       establecimientosPorSolicitud.set(e.solicitud_id, lista);
     }
 
@@ -52,6 +63,8 @@ export async function GET(request) {
         apellidoMaterno: s.apellido_materno,
         nombreCompleto: `${s.nombres} ${s.apellido_paterno} ${s.apellido_materno || ""}`.trim(),
         nacionalidad: s.nacionalidad,
+        fechaNacimiento: s.fecha_nacimiento,
+        estadoCivil: s.estado_civil,
         direccionParticular: s.direccion_particular,
         comunaResidencia: s.comuna_residencia,
         email: s.email,
@@ -60,6 +73,18 @@ export async function GET(request) {
         nivelesEducacion: s.niveles_educacion,
         antecedentesAcademicos: s.antecedentes_academicos,
         actividadesVicaria: s.actividades_vicaria,
+        actividadesVicariaAnio: s.actividades_vicaria_anio,
+        parroquia: s.parroquia,
+        nombreParroco: s.nombre_parroco,
+        actividadPastoral: s.actividad_pastoral,
+        sacramentos: s.sacramentos,
+        tituloProfesional: s.titulo_profesional,
+        tituloInstitucion: s.titulo_institucion,
+        tituloAnio: s.titulo_anio,
+        regularizacionPrograma: s.regularizacion_programa,
+        regularizacionInstitucion: s.regularizacion_institucion,
+        regularizacionNivel: s.regularizacion_nivel,
+        perfeccionamiento: s.perfeccionamiento ? JSON.parse(s.perfeccionamiento) : [],
         diocesis: s.diocesis,
         estado: s.estado,
         codigoVerificacion: s.codigo_verificacion,

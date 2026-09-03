@@ -147,6 +147,16 @@ export default function EstadoPage() {
                       </div>
                     )}
                   </div>
+                  <div style={{ padding: "0 20px 20px" }}>
+                    <a
+                      href={`/api/solicitudes/${s.id}/pdf?rut=${encodeURIComponent(s.rut)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-block"
+                    >
+                      ⬇ Descargar PDF de la solicitud
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>

@@ -334,6 +334,20 @@ export default function AdminPage() {
                       <tr>
                         <td colSpan={9} style={{ background: "var(--bg-soft)", padding: 0 }}>
                           <div className="detalle-solicitud">
+                            <div style={{ marginBottom: 14 }}>
+                              <a
+                                href={`/api/solicitudes/${s.id}/pdf?rut=${encodeURIComponent(s.rut)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline"
+                              >
+                                ⬇ Ver / descargar PDF de la solicitud
+                              </a>
+                            </div>
+
+                            <p className="detalle-label" style={{ marginBottom: 6 }}>
+                              I. Antecedentes personales
+                            </p>
                             <div className="detalle-grid">
                               <div>
                                 <span className="detalle-label">Nombres</span>
@@ -356,6 +370,14 @@ export default function AdminPage() {
                                 <span className="detalle-valor">{s.rut}</span>
                               </div>
                               <div>
+                                <span className="detalle-label">Fecha de nacimiento</span>
+                                <span className="detalle-valor">{fmt(s.fechaNacimiento)}</span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Estado civil</span>
+                                <span className="detalle-valor">{s.estadoCivil || "—"}</span>
+                              </div>
+                              <div>
                                 <span className="detalle-label">Email</span>
                                 <span className="detalle-valor">{s.email}</span>
                               </div>
@@ -367,41 +389,121 @@ export default function AdminPage() {
                                 <span className="detalle-label">Comuna de residencia</span>
                                 <span className="detalle-valor">{s.comunaResidencia || "—"}</span>
                               </div>
-                              <div>
-                                <span className="detalle-label">Cantidad de horas</span>
-                                <span className="detalle-valor">
-                                  {s.cantidadHoras ? `${s.cantidadHoras} horas` : "—"}
-                                </span>
-                              </div>
-                              <div>
-                                <span className="detalle-label">Educación en que ejerce</span>
-                                <span className="detalle-valor">{s.nivelesEducacion || "—"}</span>
-                              </div>
-                              <div>
-                                <span className="detalle-label">Antecedentes académicos</span>
-                                <span className="detalle-valor">
-                                  {s.antecedentesAcademicos || "—"}
-                                </span>
-                              </div>
                               <div className="detalle-full">
                                 <span className="detalle-label">Dirección particular</span>
                                 <span className="detalle-valor">{s.direccionParticular || "—"}</span>
                               </div>
+                            </div>
+
+                            <p className="detalle-label" style={{ marginTop: 16, marginBottom: 6 }}>
+                              II. Antecedentes pastorales
+                            </p>
+                            <div className="detalle-grid">
+                              <div>
+                                <span className="detalle-label">Parroquia</span>
+                                <span className="detalle-valor">{s.parroquia || "—"}</span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Nombre del párroco</span>
+                                <span className="detalle-valor">{s.nombreParroco || "—"}</span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Sacramentos realizados</span>
+                                <span className="detalle-valor">{s.sacramentos || "—"}</span>
+                              </div>
                               <div className="detalle-full">
-                                <span className="detalle-label">Actividades por la vicaría</span>
+                                <span className="detalle-label">Actividad pastoral</span>
+                                <span className="detalle-valor" style={{ whiteSpace: "pre-wrap" }}>
+                                  {s.actividadPastoral || "—"}
+                                </span>
+                              </div>
+                              <div className="detalle-full">
+                                <span className="detalle-label">
+                                  Actividades por la vicaría
+                                  {s.actividadesVicariaAnio ? ` (año ${s.actividadesVicariaAnio})` : ""}
+                                </span>
                                 <span className="detalle-valor" style={{ whiteSpace: "pre-wrap" }}>
                                   {s.actividadesVicaria || "—"}
                                 </span>
                               </div>
                             </div>
 
-                            <p className="detalle-label" style={{ marginTop: 14, marginBottom: 6 }}>
-                              Establecimientos
+                            <p className="detalle-label" style={{ marginTop: 16, marginBottom: 6 }}>
+                              III. Antecedentes académicos
+                            </p>
+                            <div className="detalle-grid">
+                              <div className="detalle-full">
+                                <span className="detalle-label">Título profesional o académico</span>
+                                <span className="detalle-valor">{s.tituloProfesional || "—"}</span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Institución</span>
+                                <span className="detalle-valor">{s.tituloInstitucion || "—"}</span>
+                              </div>
+                              <div>
+                                <span className="detalle-label">Año de obtención</span>
+                                <span className="detalle-valor">{s.tituloAnio || "—"}</span>
+                              </div>
+                              {(s.regularizacionPrograma || s.regularizacionInstitucion || s.regularizacionNivel) && (
+                                <>
+                                  <div>
+                                    <span className="detalle-label">Estudios de regularización — Programa</span>
+                                    <span className="detalle-valor">{s.regularizacionPrograma || "—"}</span>
+                                  </div>
+                                  <div>
+                                    <span className="detalle-label">Institución</span>
+                                    <span className="detalle-valor">{s.regularizacionInstitucion || "—"}</span>
+                                  </div>
+                                  <div>
+                                    <span className="detalle-label">Nivel o etapa que cursa</span>
+                                    <span className="detalle-valor">{s.regularizacionNivel || "—"}</span>
+                                  </div>
+                                </>
+                              )}
+                            </div>
+                            {s.perfeccionamiento && s.perfeccionamiento.length > 0 && (
+                              <div style={{ marginTop: 8 }}>
+                                <span className="detalle-label">Perfeccionamiento</span>
+                                {s.perfeccionamiento.map((p, i) => (
+                                  <div className="establecimiento-chip" key={i} style={{ marginTop: 4 }}>
+                                    {p.curso} — {p.institucion} ({p.horas} hrs)
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+
+                            {(s.cantidadHoras || s.nivelesEducacion || s.antecedentesAcademicos) && (
+                              <div className="detalle-grid" style={{ marginTop: 8 }}>
+                                {s.cantidadHoras && (
+                                  <div>
+                                    <span className="detalle-label">Cantidad de horas (legado)</span>
+                                    <span className="detalle-valor">{s.cantidadHoras} horas</span>
+                                  </div>
+                                )}
+                                {s.nivelesEducacion && (
+                                  <div>
+                                    <span className="detalle-label">Educación en que ejerce (legado)</span>
+                                    <span className="detalle-valor">{s.nivelesEducacion}</span>
+                                  </div>
+                                )}
+                                {s.antecedentesAcademicos && (
+                                  <div>
+                                    <span className="detalle-label">Antecedentes académicos (legado)</span>
+                                    <span className="detalle-valor">{s.antecedentesAcademicos}</span>
+                                  </div>
+                                )}
+                              </div>
+                            )}
+
+                            <p className="detalle-label" style={{ marginTop: 16, marginBottom: 6 }}>
+                              IV. Antecedentes laborales — Establecimientos
                             </p>
                             <div>
                               {s.establecimientos.map((e, i) => (
                                 <div className="establecimiento-chip" key={i} style={{ marginBottom: 4 }}>
                                   {e.nombre} — {e.comuna} ({e.direccion})
+                                  {e.cantidadHoras ? ` · ${e.cantidadHoras} horas` : ""}
+                                  {e.niveles ? ` · ${e.niveles}` : ""}
                                 </div>
                               ))}
                             </div>
