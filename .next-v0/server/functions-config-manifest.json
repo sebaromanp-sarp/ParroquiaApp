@@ -1,0 +1,1 @@
+{"version":1,"functions":{"/api/admin/login":{},"/api/admin/solicitudes/[id]":{},"/api/admin/solicitudes":{},"/api/certificados":{},"/api/documentos/parroquial":{},"/api/solicitudes/[id]/documentos/[tipo]":{},"/api/solicitudes/[id]/documentos":{},"/api/solicitudes/[id]/pdf":{},"/api/solicitudes":{}}}
