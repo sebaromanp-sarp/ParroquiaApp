@@ -40,7 +40,15 @@ CREATE TABLE IF NOT EXISTS solicitudes (
   observaciones TEXT,
   fecha_solicitud TIMESTAMPTZ NOT NULL DEFAULT now(),
   fecha_resolucion TIMESTAMPTZ,
-  fecha_vencimiento DATE
+  fecha_vencimiento DATE,
+  documento_parroquial BYTEA,
+  documento_parroquial_nombre TEXT,
+  documento_parroquial_tipo TEXT,
+  documento_parroquial_fecha TIMESTAMPTZ,
+  documento_final BYTEA,
+  documento_final_nombre TEXT,
+  documento_final_tipo TEXT,
+  documento_final_fecha TIMESTAMPTZ
 );
 
 CREATE TABLE IF NOT EXISTS establecimientos (
@@ -74,6 +82,14 @@ ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS regularizacion_nivel TEXT;
 ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS perfeccionamiento TEXT;
 ALTER TABLE establecimientos ADD COLUMN IF NOT EXISTS cantidad_horas INTEGER;
 ALTER TABLE establecimientos ADD COLUMN IF NOT EXISTS niveles TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_parroquial BYTEA;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_parroquial_nombre TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_parroquial_tipo TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_parroquial_fecha TIMESTAMPTZ;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_final BYTEA;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_final_nombre TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_final_tipo TEXT;
+ALTER TABLE solicitudes ADD COLUMN IF NOT EXISTS documento_final_fecha TIMESTAMPTZ;
 
 CREATE INDEX IF NOT EXISTS idx_solicitudes_rut ON solicitudes (rut);
 CREATE INDEX IF NOT EXISTS idx_solicitudes_codigo ON solicitudes (codigo_verificacion);

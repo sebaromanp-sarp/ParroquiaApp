@@ -128,6 +128,10 @@ export default function EstadoPage() {
                         <span>{fmt(s.fechaResolucion)}</span>
                       </div>
                     )}
+                    {s.estado === "pendiente" && (
+                      <div className="result-row"><span>Documento parroquial</span><span>{s.documentoParroquial ? "Recibido y en revisión" : "Pendiente de subir"}</span></div>
+                    )}
+                    {s.documentoFinal && <div className="result-row"><span>Documento final</span><a href={`/api/solicitudes/${s.id}/documentos/final?rut=${encodeURIComponent(s.rut)}`} className="btn btn-outline">Descargar</a></div>}
                     {s.estado === "aprobado" && (
                       <>
                         <div className="result-row">

@@ -71,6 +71,19 @@ export default function RenovacionPage() {
   const [enviando, setEnviando] = useState(false);
   const [resultado, setResultado] = useState(null);
   const [errorGeneral, setErrorGeneral] = useState("");
+  const [archivoParroquial, setArchivoParroquial] = useState(null);
+  const [subiendoParroquial, setSubiendoParroquial] = useState(false);
+  const [mensajeDocumento, setMensajeDocumento] = useState("");
+
+  async function subirDocumentoParroquial() {
+    if (!archivoParroquial) return;
+    setSubiendoParroquial(true); setMensajeDocumento("");
+    const datos = new FormData(); datos.append("archivo", archivoParroquial); datos.append("rut", resultado.rut);
+    const res = await fetch(`/api/solicitudes/${resultado.id}/documentos?tipo=parroquial`, { method: "POST", body: datos });
+    const data = await res.json();
+    setSubiendoParroquial(false);
+    setMensajeDocumento(res.ok ? "Documento enviado correctamente para revisión." : data.error || "No se pudo enviar el documento.");
+  }
 
   function setCampo(campo, valor) {
     setForm((f) => ({ ...f, [campo]: valor }));
@@ -231,15 +244,19 @@ export default function RenovacionPage() {
             </div>
 
             <div className="alert alert-success" style={{ marginTop: 20 }}>
-              Necesitas <strong>firma física</strong> para completar el trámite. Descarga la
-              Solicitud de Certificado de Idoneidad con tus datos ya completados, imprímela,
-              fírmala y entrégala en tu parroquia o en la Vicaría de Educación.
+              Descarga el certificado parroquial, llévalo al sacerdote de tu parroquia para que lo complete y
+              firme, y luego súbelo aquí para que podamos revisarlo. El código de verificación solo se
+              generará después del visto bueno.
             </div>
 
-            <div className="submit-row">
-              <a href={urlPdf} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                ⬇ Descargar PDF para firmar
-              </a>
+            <div className="submit-row" style={{ flexWrap: "wrap" }}>
+              <a href="/api/documentos/parroquial" className="btn btn-primary">⬇ Descargar certificado parroquial</a>
+              <a href={urlPdf} target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ver solicitud</a>
+            </div>
+            <div className="simple-form" style={{ margin: "20px auto 0" }}>
+              <div className="field"><label htmlFor="docParroquial">Sube el documento parroquial firmado</label><input id="docParroquial" type="file" accept=".pdf,.doc,.docx,image/*" onChange={(e) => setArchivoParroquial(e.target.files?.[0] || null)} /><span className="hint">El sacerdote debe completarlo y firmarlo antes de subirlo.</span></div>
+              <button type="button" className="btn btn-primary btn-block" disabled={!archivoParroquial || subiendoParroquial} onClick={subirDocumentoParroquial}>{subiendoParroquial ? "Enviando..." : "Enviar documento firmado"}</button>
+              {mensajeDocumento && <div className="alert alert-success">{mensajeDocumento}</div>}
             </div>
 
             <p className="page-subtitle" style={{ marginTop: 22 }}>
