@@ -128,6 +128,26 @@ export default function EstadoPage() {
                         <span>{fmt(s.fechaResolucion)}</span>
                       </div>
                     )}
+                    <details className="request-details">
+                      <summary>Ver datos entregados en la solicitud</summary>
+                      <div className="request-details-body">
+                        <div className="result-row"><span>Fecha de nacimiento</span><span>{s.fechaNacimiento || "—"}</span></div>
+                        <div className="result-row"><span>Estado civil</span><span>{s.estadoCivil || "—"}</span></div>
+                        <div className="result-row"><span>Parroquia</span><span>{s.parroquia || "—"}</span></div>
+                        <div className="result-row"><span>Párroco</span><span>{s.nombreParroco || "—"}</span></div>
+                        <div className="result-row"><span>Actividad pastoral</span><span>{s.actividadPastoral || "—"}</span></div>
+                        <div className="result-row"><span>Sacramentos</span><span>{Array.isArray(s.sacramentos) ? s.sacramentos.join(", ") || "—" : s.sacramentos || "—"}</span></div>
+                        <div className="result-row"><span>Título profesional</span><span>{s.tituloProfesional || "—"}</span></div>
+                        <div className="result-row"><span>Institución del título</span><span>{s.tituloInstitucion || "—"}</span></div>
+                        {s.establecimientos.map((e, i) => (
+                          <div className="establishment-detail" key={`${s.id}-est-${i}`}>
+                            <strong>Establecimiento {i + 1}</strong>
+                            <span>{e.nombre} · {e.direccion}, {e.comuna}</span>
+                            <span>{e.cantidadHoras} horas · {Array.isArray(e.niveles) ? e.niveles.join(", ") : e.niveles}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
                     {s.estado === "pendiente" && (
                       <div className="result-row"><span>Documento parroquial</span><span>{s.documentoParroquial ? "Recibido y en revisión" : "Pendiente de subir"}</span></div>
                     )}
@@ -150,16 +170,6 @@ export default function EstadoPage() {
                         <span>{s.observaciones}</span>
                       </div>
                     )}
-                  </div>
-                  <div style={{ padding: "0 20px 20px" }}>
-                    <a
-                      href={`/api/solicitudes/${s.id}/pdf?rut=${encodeURIComponent(s.rut)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-outline btn-block"
-                    >
-                      ⬇ Descargar PDF de la solicitud
-                    </a>
                   </div>
                 </div>
               ))}

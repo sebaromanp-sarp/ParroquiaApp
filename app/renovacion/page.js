@@ -210,7 +210,6 @@ export default function RenovacionPage() {
   }
 
   if (resultado) {
-    const urlPdf = `/api/solicitudes/${resultado.id}/pdf?rut=${encodeURIComponent(resultado.rut)}`;
     return (
       <div className="page-shell">
         <Header />
@@ -246,12 +245,11 @@ export default function RenovacionPage() {
             <div className="alert alert-success" style={{ marginTop: 20 }}>
               Descarga el certificado parroquial, llévalo al sacerdote de tu parroquia para que lo complete y
               firme, y luego súbelo aquí para que podamos revisarlo. El código de verificación solo se
-              generará después del visto bueno.
+              generará después de la revision de los datos entregados por el sacerdote y el profesor solicitante.
             </div>
 
             <div className="submit-row" style={{ flexWrap: "wrap" }}>
               <a href="/api/documentos/parroquial" className="btn btn-primary">⬇ Descargar certificado parroquial</a>
-              <a href={urlPdf} target="_blank" rel="noopener noreferrer" className="btn btn-outline">Ver solicitud</a>
             </div>
             <div className="simple-form" style={{ margin: "20px auto 0" }}>
               <div className="field"><label htmlFor="docParroquial">Sube el documento parroquial firmado</label><input id="docParroquial" type="file" accept=".pdf,.doc,.docx,image/*" onChange={(e) => setArchivoParroquial(e.target.files?.[0] || null)} /><span className="hint">El sacerdote debe completarlo y firmarlo antes de subirlo.</span></div>
