@@ -94,7 +94,8 @@ export async function GET(request) {
              titulo_profesional, titulo_institucion, titulo_anio,
              regularizacion_programa, regularizacion_institucion, regularizacion_nivel,
              perfeccionamiento,
-             estado, codigo_verificacion, observaciones, fecha_solicitud, fecha_resolucion, fecha_vencimiento
+             estado, codigo_verificacion, observaciones, fecha_solicitud, fecha_resolucion, fecha_vencimiento,
+             documento_parroquial_nombre, documento_parroquial_fecha, documento_final_nombre, documento_final_fecha
       FROM solicitudes
       WHERE rut = ${rutLimpio}
       ORDER BY fecha_solicitud DESC
@@ -128,10 +129,14 @@ export async function GET(request) {
         perfeccionamiento: s.perfeccionamiento ? JSON.parse(s.perfeccionamiento) : [],
         estado: s.estado,
         codigoVerificacion: s.estado === "aprobado" ? s.codigo_verificacion : null,
+        documentoParroquial: s.documento_parroquial_nombre ? { nombre: s.documento_parroquial_nombre, fecha: s.documento_parroquial_fecha } : null,
+        documentoFinal: s.documento_final_nombre ? { nombre: s.documento_final_nombre, fecha: s.documento_final_fecha } : null,
         observaciones: s.observaciones,
         fechaSolicitud: s.fecha_solicitud,
         fechaResolucion: s.fecha_resolucion,
         fechaVencimiento: s.fecha_vencimiento,
+        documentoParroquial: s.documento_parroquial_nombre ? { nombre: s.documento_parroquial_nombre, fecha: s.documento_parroquial_fecha } : null,
+        documentoFinal: s.documento_final_nombre ? { nombre: s.documento_final_nombre, fecha: s.documento_final_fecha } : null,
         establecimientos: establecimientos.map((e) => ({
           nombre: e.nombre,
           direccion: e.direccion,

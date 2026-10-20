@@ -310,7 +310,8 @@ export default function AdminPage() {
                           <div className="row-actions">
                             <button
                               className="btn btn-primary"
-                              disabled={procesandoId === s.id}
+                              disabled={procesandoId === s.id || !s.documentoParroquial}
+                              title={!s.documentoParroquial ? "Primero debe recibirse el certificado parroquial firmado" : "Aprobar y generar código"}
                               onClick={() => resolver(s.id, "aprobar")}
                             >
                               Aprobar
@@ -334,16 +335,13 @@ export default function AdminPage() {
                       <tr>
                         <td colSpan={9} style={{ background: "var(--bg-soft)", padding: 0 }}>
                           <div className="detalle-solicitud">
-                            <div style={{ marginBottom: 14 }}>
-                              <a
-                                href={`/api/solicitudes/${s.id}/pdf?rut=${encodeURIComponent(s.rut)}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-outline"
-                              >
-                                ⬇ Ver / descargar PDF de la solicitud
-                              </a>
+                            <div style={{ marginBottom: 14, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                              <a href={`/api/solicitudes/${s.id}/pdf?rut=${encodeURIComponent(s.rut)}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline">⬇ Ver PDF de la solicitud</a>
+                              {s.documentoParroquial && <a href={`/api/solicitudes/${s.id}/documentos/parroquial?rut=${encodeURIComponent(s.rut)}`} className="btn btn-outline">⬇ Descargar certificado parroquial firmado</a>}
                             </div>
+                            <div className="info-banner">{s.documentoParroquial ? `Documento parroquial recibido: ${s.documentoParroquial.nombre}. Revisa el contenido antes de aprobar.` : "Falta que el profesor suba el certificado parroquial firmado."}</div>
+                            {s.estado === "aprobado" && <div className="field" style={{ marginTop: 12 }}><label>Documento final firmado por el padre</label><input type="file" accept=".pdf,.doc,.docx,image/*" onChange={async (e) => { const archivo = e.target.files?.[0]; if (!archivo) return; const datos = new FormData(); datos.append("archivo", archivo); const res = await fetch(`/api/solicitudes/${s.id}/documentos?tipo=final`, { method: "POST", headers: { "x-admin-password": password }, body: datos }); if (!res.ok) alert("No se pudo guardar el documento final."); else cargarSolicitudes(); }} /></div>}
+                            {s.documentoFinal && <a href={`/api/solicitudes/${s.id}/documentos/final`} className="btn btn-outline">⬇ Descargar documento final</a>}
 
                             <p className="detalle-label" style={{ marginBottom: 6 }}>
                               I. Antecedentes personales

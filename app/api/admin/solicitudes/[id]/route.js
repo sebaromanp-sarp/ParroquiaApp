@@ -36,6 +36,14 @@ export async function PATCH(request, { params }) {
       return NextResponse.json({ ok: true, estado: updated.estado });
     }
 
+    // El código solo nace después de que el párroco haya revisado y subido el certificado parroquial.
+    if (accion === "aprobar") {
+      const [documento] = await db`SELECT documento_parroquial FROM solicitudes WHERE id = ${id}`;
+      if (!documento?.documento_parroquial) {
+        return NextResponse.json({ error: "Aún falta el certificado parroquial firmado por el sacerdote." }, { status: 400 });
+      }
+    }
+
     // aprobar: genera un código de verificación único (reintenta si hay colisión)
     let codigo = null;
     for (let intento = 0; intento < 8; intento++) {

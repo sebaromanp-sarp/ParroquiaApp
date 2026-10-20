@@ -29,7 +29,9 @@ export async function GET(request) {
                regularizacion_programa, regularizacion_institucion, regularizacion_nivel,
                perfeccionamiento,
                diocesis, estado, codigo_verificacion, observaciones,
-               fecha_solicitud, fecha_resolucion, fecha_vencimiento
+               fecha_solicitud, fecha_resolucion, fecha_vencimiento,
+               documento_parroquial_nombre, documento_parroquial_fecha,
+               documento_final_nombre, documento_final_fecha
         FROM solicitudes
         ORDER BY fecha_solicitud DESC
       `,
@@ -92,6 +94,8 @@ export async function GET(request) {
         fechaSolicitud: s.fecha_solicitud,
         fechaResolucion: s.fecha_resolucion,
         fechaVencimiento: s.fecha_vencimiento,
+        documentoParroquial: s.documento_parroquial_nombre ? { nombre: s.documento_parroquial_nombre, fecha: s.documento_parroquial_fecha } : null,
+        documentoFinal: s.documento_final_nombre ? { nombre: s.documento_final_nombre, fecha: s.documento_final_fecha } : null,
         establecimientos: establecimientosPorSolicitud.get(s.id) || [],
       })),
     });
